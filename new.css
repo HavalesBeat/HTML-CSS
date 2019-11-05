@@ -1,1 +1,61 @@
-gychiwec
+body {
+  background: #497017;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  color: #640a00;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+#contactDetails {
+  display: flex;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#menu {
+	margin: auto 0;
+	margin: 20px 0 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+}
+
+#button::hover {
+	color: white;
+}
+
+#Education {
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+#WorkExperience {
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+#Skills {
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+#Hobbies {
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
