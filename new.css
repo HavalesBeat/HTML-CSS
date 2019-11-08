@@ -2,9 +2,30 @@ body {
   background: #497017;
 }
 
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+	#header {
+	display: flex;
+	flex-direction: column;
+} 
+ }
+
+#AKFace {
+	border: solid 3px #640a00;
+}
+
+#section2 {
+	display: flex;
+	flex-direction: column;	
+}
+
 #title {
   display: flex;
-  justify-content: center;
   color: #640a00;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
@@ -12,24 +33,48 @@ body {
 }
 
 #contactDetails {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
-#menu {
+@media only screen and (max-width: 600px) {
+	#menu {
 	margin: auto 0;
+	display: flex;
+	flex-direction: column;
+} 
+ }
+
+#menu {
 	margin: 20px 0 20px 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	position: relative;
+	justify-content: space-evenly;
 }
 
-#button::hover {
-	color: white;
+.ButtonDiv {
+	font-size: 1.2em;
+	padding-top: 50px;
+}
+
+.Button:hover {
+	background-color: white;
+	color: #640a00;
+}
+
+.Button {
+	font-family: arial;
+	width: 15%;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 15px;
+	text-decoration: none;
+	color: #640a00;
 }
 
 #Education {
@@ -37,6 +82,14 @@ body {
 	color: white;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 25px;
+}
+
+.otherLines {
+	text-align: center;
+	width: 50%;
+	background-color: #640a00;
+	height: 5px;
+	
 }
 
 #WorkExperience {
@@ -59,3 +112,152 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 25px;
 }
+
+.tables {
+	width: 100%;
+	margin: auto 0;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.TRs, td {
+  	font-family: 'Comfortaa', cursive;
+	border: 3px solid #640a00;
+}
+
+#3rdBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#FirstColumn {
+	text-align: center;
+	order: 0;
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	float: left;
+}
+
+#SecondColumn {
+	text-align: center;
+	order: 1;
+	width: 48%;
+	display: flex;
+	float: right;
+	flex-direction: column;
+}
+
+#LangList {
+	list-style-type: none;
+}
+
+#Langtitle {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold; 
+}
+
+.LangLI {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#ProgLanguagesTitle {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+.ProgLangLI {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#ProgLangList {
+	list-style-type: none;
+}
+
+#Progs {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+#ProgList {
+	list-style-type: none;
+	font-weight: bold;
+	/*font-size: 15px;*/
+}
+
+.ProgLI {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.Bold {
+	font-weight: bold;
+	font-family: 'Comfortaa', cursive;
+}
+
+
+#SpecialSkills {
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+#SpecialSkillsTitle {
+	display: flex;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#DoThis {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+#4thBlock {
+	margin-bottom: 60px;
+}
+
+#Hobbies {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+#HobbiesList {
+	margin-left: 30px;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 50px;
+}
+
+#LastButton {
+	/*width: 50%;*/
+	padding-top: 40px;
+	padding-bottom: 30px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	/*align-content: center;*/
+	border-radius: 15px;
+	font-weight: 900;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	color: #640a00;
+}
+
+#LastButton:hover {
+	background-color: white;
+	color: #640a00;
